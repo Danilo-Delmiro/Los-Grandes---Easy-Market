@@ -1,8 +1,8 @@
 CREATE TABLE Dono_do_mercado (
    Id_Dono (PK),
-   Nome VARCHAR,
-   Telefone VARCHAR,
-   Cpf VARCHAR 
+   Nome VARCHAR(255),
+   Telefone VARCHAR(255),
+   Cpf VARCHAR(50) 
 );
 
 CREATE TABLE Produtos (
@@ -12,20 +12,20 @@ CREATE TABLE Produtos (
 
 CREATE TABLE Cliente (
    Id_Cliente (PK),
-   Nome VARCHAR
+   Nome VARCHAR (255)
 );
 
 CREATE TABLE Vende (
     Id_Produto (PK),
     Id_Dono (FK),
-    Produtos VARCHAR
+    Produtos VARCHAR (255)
 );
 
 CREATE TABLE Compra (
-    Id_Compra (PK)
-    Id_Cliente INT (FK)
-    Id_Produto INT (FK)
-    Quantidade DECIMAL
+    Id_Compra (PK),
+    Id_Cliente INT (FK),
+    Id_Produto INT (FK),
+    Quantidade DECIMAL,
     Preco_Total DECIMAL
 );
 
