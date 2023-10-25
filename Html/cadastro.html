@@ -4,61 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href= "/css/estilo.css">
-    <script src="https://kit.fontawesome.com/4ac734fc2e.js" crossorigin="anonymous"></script>
-    <script scr="script.js"></script>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/Css/cadastro.css">
 </head>
 
 <body>
-    <div class="borda"></div>
-
-
-    <div class="container">
+    <div class="borda">
         <h1>Easy Market</h1>
+        <img src="/Img/market.jpg" alt="Imagem do mercado">
+        <h1>Bem-Vindo</h1>
     </div>
 
+    <form action="/Php/cadastro.php" method="POST">
+        <div class="Email-Senha">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
     <div class="seta">
-        <a href="projeto.html"><img src="img/seta.png" alt="seta"></a>
+        <a href="login.html"><img src="/Img/seta (1).png"></a>
     </div>
-
-    <div class="mercado">
-        <img src="img/market.jpg" alt="market">
-    </div>
-
-    <div class="container2">
-        <h2>Bem-vindo</h2>
-    </div>
-
-    <div class="label-float">
-        <div class="cadastro-inicial">
-            <input type="text" id="Email:" placeholder="">
-            <label for="Email">Email</label>
-        </div>
-    </div>
-
-    <div class="label-float">
-        <div class="cadastro-inicial">
-            <input type="text" id="Senha:" placeholder="">
-            <label for="Email">Senha</label>
-        </div>
-    </div>
-
-    <div class="label-float">
-        <div class="cadastro-inicial">
-            <input type="text" id="Cpf:" placeholder="">
-            <label for="Cpf">Cpf</label>
-        </div>
-    </div>
-
-    <div class="acessar-area">
-        <a href="tela-inicial-produtos.html">
-    </div>
-    <div class="acessar-tela-inicial">
-        <p>Acessar</p>
-    </div>
-
-
 </body>
 
 </html>

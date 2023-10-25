@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Produtos</title>
+    <link rel="stylesheet" href="/Css/tela_adicionar_produtos.css">
+</head>
+
+<body>
+    <div class="borda">
+
+    </div>
+
+    <div class="usuario">
+        <a href=""><img src="/Img/usuario (1).png"></a>
+    </div>
+
+    <div class="borda_esquerda">
+
+    </div>
+
+    <div class="titulo">
+        <h1>Easy Market</h1>
+        <img src="/Img/market.jpg">
+        <h1>Produtos</h1>
+    </div>
+
+    <div class="linha1">
+
+    </div>
+
+    <div class="linha2">
+
+    </div>
+
+    <div class="rendimento">
+        <a href="">Rendimento</a>
+        <div class="imagem">
+            <img src="/Img/receitas (1).png">
+        </div>
+
+        <div class="produtos">
+            <a href="tela_inicial.html">Produtos</a>
+            <div class="imagem2">
+                <img src="/Img/mercado (1).png">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="adicionar_produtos">
+        <form method="POST" action="/Php/tela_adicionar_produtos.php">
+            <input type="text" name="Nome" placeholder="Nome do Produto">
+            <input type="number" name="Quantidade" placeholder="Quantidade">
+            <input type="number" name="Preco" placeholder="Preço">
+            <button type="submit">Adicionar Produto</button>
+        </form>
+
+    </div>
+
+    <div class="borda_produtos">
+
+    </div>
+
+    <table id="tabela_produtos">
+        <thead>
+            <tr>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    </script>
+
+    <script>
+        function addProduct() {
+            var name = document.getElementById('product-name').value;
+            var quantity = document.getElementById('product-quantity').value;
+            var price = document.getElementById('product-price').value;
+
+            var table = document.getElementById('tabela_produtos').getElementsByTagName('tbody')[0];
+            var newRow = table.insertRow(table.rows.length);
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            cell1.innerHTML = name;
+            cell2.innerHTML = quantity;
+            cell3.innerHTML = price;
+
+            document.getElementById('product-name').value = '';
+            document.getElementById('product-quantity').value = '';
+            document.getElementById('product-price').value = '';
+        }
+    </script>
+
+</body>
+
+</html>

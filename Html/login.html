@@ -15,17 +15,29 @@
         <img src="/Img/market.jpg">
         <h1>Bem-Vindo</h1>
     </div>
-
-    <form action="login.php" method="POST">
+    <form action="/Php/login.php" method="POST">
         <div class="Email-Senha">
             <label for="">Email</label>
             <input type="e-mail" name="email">
             <label for="">Senha</label>
             <input type="password" name="senha">
-            <a href="">Registrar</a>
-            <button type="submit">Acessar</button>
+            <a href="cadastro.html">Registrar</a>
+            <a href="tela_inicial.html"><button type="submit">Acessar</button></a>
         </div>
     </form>
+    </form>
+    <script>
+        function validarFormulario() {
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha').value;
+
+            if (email.trim() === "" || senha.trim() === "") {
+                alert("Por favor, preencha todos os campos de e-mail e senha.");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
 
 </html>
