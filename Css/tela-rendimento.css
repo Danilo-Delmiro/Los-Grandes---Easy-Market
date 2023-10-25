@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.borda-produto {
+  display: block;
+  position: relative;
+  width: 1920px;
+  height: 85px;
+  flex-shrink: 0;
+  background: #1d1d1d;
+}
+
+.imagem-usuario {
+  display: table;
+  position: absolute;
+  margin-top: -75px;
+  margin-left: -23px;
+}
+
+.user {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-left: 70px;
+  margin-top: -65px;
+}
+
+.colunas {
+  box-sizing: border-box;
+  border: 2px solid #000;
+  width: 280px;
+  height: 877px;
+  flex-shrink: 0;
+  background: #4e4e4e;
+}
+
+.imagens-produto {
+  margin-left: 110px;
+  margin-top: 80px;
+}
+
+.linhas {
+  width: 351.001px;
+  height: 8px;
+  background: #fefcfc;
+  margin-top: 10px;
+  padding-top: 2px;
+}
+
+.linha {
+  width: 351.001px;
+  height: 8px;
+  background: #fefcfc;
+  margin-top: -580px;
+  padding-top: 2px;
+}
+
+.Easy-market {
+  position: absolute;
+  display: block;
+  margin-left: 50%;
+  margin-top: -150px;
+}
+
+.Title {
+  text-align: center;
+  margin-left: 130px;
+}
+
+.Titulo {
+  position: absolute;
+  display: flex;
+  margin-left: 48.8%;
+  margin-top: -195px;
+}
+
+input {
+  position: flex;
+  display: block;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 3px solid #000000;
+  outline: none;
+  min-width: 150px;
+  font-size: 16px;
+}
+
+.label-float {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 70px;
+  padding: 1px;
+  font-size: 25px;
+  transition: all 0.3 ease-out;
+  border-radius: 0;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #000000;
+}
+
+.label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.label-float input:focus + label {
+  font-size: 12px;
+  margin-top: 0;
+  color: #000000;
+}
+
+.acesso {
+  position: relative;
+  display: flex;
+  width: 150px;
+  height: 45px;
+  margin-top: -80px;
+  border-radius: 17px;
+  background: #2c2c2c;
+  box-shadow: 10px 1px 5px 0px rgba(0, 0, 0, 0.25) inset;
+  flex-shrink: 0;
+  margin-left: 63%;
+  cursor: pointer;
+}
+
+a {
+  color: #ffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.produto-link {
+  position: relative;
+  margin-top: -6%;
+  margin-left: 75px;
+}
+
+.Rendimento {
+  position: absolute;
+  margin-top: -14%;
+  margin-left: 64px;
+}
+
+.bordas {
+  position: relative;
+  width: 1920px;
+  height: 5px;
+  margin-top: 40px;
+  background: #4e4e4e;
+}
+
+.produtos {
+  display: flex;
+  position: absolute;
+  font-size: 12px;
+  margin-left: 20%;
+  margin-top: 25px;
+}
+
+.estoques {
+  display: flex;
+  position: absolute;
+  font-size: 12px;
+  margin-left: 30%;
+  margin-top: 25px;
+}
+
+.preços {
+  display: flex;
+  position: absolute;
+  font-size: 12px;
+  margin-left: 45%;
+  margin-top: 25px;
+}
+
+.bordas2 {
+  position: absolute;
+  width: 1920px;
+  height: 5px;
+  margin-top: 70px;
+  background: #4e4e4e;
+}
