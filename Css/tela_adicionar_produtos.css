@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.borda {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 120rem;
+  height: 85px;
+  flex-shrink: 0;
+  background: #1d1d1d;
+}
+
+.usuario {
+  display: flex;
+  position: absolute;
+  margin-top: -4.5rem;
+  margin-left: 0.5rem;
+  text-size-adjust: 100rem;
+}
+
+.borda_esquerda {
+  width: 17rem;
+  height: 54.2rem;
+  flex-shrink: 0;
+  background-color: #4e4e4e;
+}
+
+.titulo {
+  display: block;
+  text-align: center;
+  margin-top: -53rem;
+}
+
+.linha1 {
+  width: 17rem;
+  height: 0.5rem;
+  margin-top: -7rem;
+  background: #fefcfc;
+}
+
+.linha2 {
+  width: 17rem;
+  height: 0.5rem;
+  background: #fefcfc;
+  margin-top: 7rem;
+}
+
+.rendimento {
+  position: flex;
+  margin-left: 4rem;
+  margin-top: -15rem;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.imagem {
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+}
+
+.produtos {
+  position: flex;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+.imagem2 {
+  position: flex;
+  margin-left: 1.5rem;
+  margin-top: 0.8rem;
+}
+
+.adicionar_produtos form input,
+.adicionar_produtos form button {
+  display: block;
+  margin-bottom: 1rem;
+  margin-left: 55rem;
+  margin-top: 3rem;
+}
+
+input {
+  position: flex;
+  display: block;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 3px solid #000000;
+  outline: none;
+  min-width: 150px;
+  font-size: 16px;
+}
+
+button {
+  position: flex;
+  color: #fdfbfb;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3rem;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #000;
+  box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

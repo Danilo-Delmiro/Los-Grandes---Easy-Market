@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.borda {
+  width: 120rem;
+  height: 5rem;
+  flex-shrink: 0;
+  background: #222;
+}
+
+.usuario {
+  display: flex;
+  position: absolute;
+  margin-top: -4.5rem;
+  margin-left: 0.5rem;
+  text-size-adjust: 100rem;
+}
+
+.borda_esquerda {
+  display: block;
+  width: 17rem;
+  height: 54.2rem;
+  flex-shrink: 0;
+  background-color: #4e4e4e;
+}
+
+.titulo {
+  display: block;
+  text-align: center;
+  margin-top: -53rem;
+}
+
+.linha1 {
+  width: 17rem;
+  height: 0.5rem;
+  margin-top: -7rem;
+  background: #fefcfc;
+}
+
+.linha2 {
+  width: 17rem;
+  height: 0.5rem;
+  background: #fefcfc;
+  margin-top: 7rem;
+}
+
+.rendimento {
+  position: flex;
+  margin-left: 4rem;
+  margin-top: -15rem;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.imagem {
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+}
+
+.produtos {
+  position: flex;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+.imagem2 {
+  position: flex;
+  margin-left: 1.5rem;
+  margin-top: 0.8rem;
+}
+
+input {
+  margin-left: 52rem;
+  margin-top: 2rem;
+  position: relative;
+  display: block;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 3px solid #000000;
+  outline: none;
+  min-width: 150px;
+  font-size: 16px;
+}
+
+.borda_adicionar {
+  position: relative;
+  box-sizing: border-box;
+  background-color: rgb(26, 24, 24);
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10rem;
+  margin-left: 67rem;
+  margin-top: -6rem;
+}
+
+.adicionar {
+  position: absolute;
+  margin-left: 68.5rem;
+  margin-top: -2.5rem;
+}
+
+.borda_produtos {
+  box-sizing: content-box;
+  width: 103rem;
+  height: 0.5rem;
+  border-radius: 2rem;
+  margin-top: 4.5rem;
+  background: #000;
+  margin-left: 13rem;
+}
+
+.borda_produtos2 {
+  box-sizing: content-box;
+  width: 103rem;
+  height: 0.5rem;
+  border-radius: 2rem;
+  margin-top: 4.5rem;
+  background: #000;
+  margin-left: 13rem;
+}
+
+.produtos_quantidade_preço {
+  display: flex;
+  margin-left: 13rem;
+  margin-top: -3.5rem;
+}
+
+.produtos_quantidade_preço h4 {
+  margin: 0 5rem;
+}
