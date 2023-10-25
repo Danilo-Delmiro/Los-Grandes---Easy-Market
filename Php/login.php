@@ -1,40 +1,52 @@
-<?php
-$servidor = "localhost";
-$usuario = "root";
-$senha = "";
-$dbname = "easy_market";
+<!DOCTYPE html>
+<html lang="pt-br">
 
-$conexao = mysqli_connect("localhost", "root", "", "easy_market");
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 
-$email = $_POST['email'];
-$email = mysqli_real_escape_string($conexao, $email);
+<body>
+  <?php
+  $servidor = "localhost";
+  $usuario = "root";
+  $senha = "";
+  $dbname = "easy_market";
 
-$senha = 0md5 ($_POST['senha']);
-$senha = mysqli_real_escape_string($conexao, $senha);
+  $conexao = mysqli_connect($servidor, $usuario, $senha, $dbname);
 
-$sql = "SELECT email FROM easy_market.usuario WHERE email='$email'";
-$retorno = mysqli_query($conexao,$sql);
+  if (!$conexao) {
+    die("Falha na conexão: " . mysqli_connect_error());
+  }
 
-$sql = "SELECT senha from easy_market.usuario WHERE senha='$senha'";
-$retorno = mysqli_query($conexao,$sql);
+  $email = isset($_POST['email']) ? $_POST['email'] : '';
+  $senha = isset($_POST['senha']) ? $_POST['senha'] : '';
 
-if(mysqli_num_rows($retorno)>0){
-  echo"Email já cadastrado<br>";
-}
-else{
-  $email = $_POST['email'];
-  $senha = $_POST['senha'];
+  if (empty($email) || empty($senha)) {
+    echo "Por favor, preencha todos os campos.<br>";
+  } else {
+    $email = mysqli_real_escape_string($conexao, $email);
+    $senha = md5($senha);
 
-}
-$sql = "INSERT INTO easy_market.usuario(email,senha) VALUES ('$email','$senha')";
-if(mysqli_query($conexao, $sql)){
-  echo "Usuario Cadastrado com sucesso";
-}
-else{
-  echo "Erro".mysqli_connect_error($conexao);
-}
+    $sql = "SELECT email FROM empresa WHERE email='$email'";
+    $resultado = mysqli_query($conexao, $sql);
 
+    if (mysqli_num_rows($resultado) > 0) {
+      echo "Email já cadastrado.<br>";
+    } else {
+      $sql = "INSERT INTO empresa (email, senha) VALUES ('$email', '$senha')";
+      $resultado = mysqli_query($conexao, $sql);
 
-mysqli_close($conexao);
+      if ($resultado) {
+        echo "Usuario Logado";
+      } else {
+        echo "Erro ao cadastrar o usuário: " . mysqli_error($conexao);
+      }
+    }
+  }
+  mysqli_close($conexao);
+  ?>
+</body>
 
-?>
+</html>
